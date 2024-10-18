@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moving : MonoBehaviour
+public class Mover : MonoBehaviour
 {
     [SerializeField] private Vector3 _moveDirection;
 
-    void Update()
+    private void Update()
     {
-        transform.Translate(_moveDirection);
+        transform.Translate(_moveDirection * Time.deltatime);
     }
 }

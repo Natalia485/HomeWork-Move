@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 580855760}
   - component: {fileID: 580855759}
   - component: {fileID: 580855758}
-  - component: {fileID: 580855757}
+  - component: {fileID: 580855762}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -262,19 +262,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &580855757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580855756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cad93c3ffeccce04bbde3ed8a654f494, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rateOfIncrease: 0.004
 --- !u!136 &580855758
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -363,6 +350,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580855762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580855756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b74f3b70b86ac419bc35c235b6dd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rateOfIncrease: 0.004
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 0.98
   _rotateSpeed: 0.6
-  _increaseSpeed: {x: 0.004, y: 0.004, z: 0.004}
+  _increaseObject: {x: 0.004, y: 0.004, z: 0.004}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

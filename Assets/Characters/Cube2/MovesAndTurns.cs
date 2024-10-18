@@ -8,7 +8,7 @@ public class MovesAndTurns : MonoBehaviour
     [SerializeField] private float _rotateSpeed;
     [SerializeField] private Vector3 _increaseObject;
 
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
         transform.Rotate(0, _rotateSpeed, 0);
